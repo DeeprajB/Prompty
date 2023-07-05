@@ -39,7 +39,7 @@ Prompty is an open-source AI prompting tool for modern world to discover, create
 ### Edit Prompt
 ![Edit](https://i.ibb.co/mtKVrY7/Edit.png)<br/>
 ### Search Prompts, Tags or Users.
-![Search](https://ibb.co/tc0RdRN)<br/>
+![Search](https://i.ibb.co/mtnpxpY/Search.png)<br/>
 ### User Profile Page
 ![Profile](https://i.ibb.co/rmChzRC/Profile.png)
 
