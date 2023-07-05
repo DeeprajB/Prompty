@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br  />
+<p  align="center">
+<a href="https://github.com/DeeprajB/prompty">
+<img src="./public/assets/images/prompty.png" alt="Logo" width="100" height="100"></a>
+<h1  align="center">Prompty</h1>
+</p>
 
-## Getting Started
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-First, run the development server:
+## About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![HomePage](https://i.ibb.co/kXkxDzy/Home.png)<br />
+Prompty is an open-source AI prompting tool for modern world to discover, create & share creative prompts.
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Built With
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* [Next 13](https://nextjs.org/)
+* [Node](https://nodejs.org/en/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [MongoDB](https://www.mongodb.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
+### Create Prompt
+![Create](https://i.ibb.co/wKw3MFS/Create.png)<br/>
+### Edit Prompt
+![Edit](https://i.ibb.co/mtKVrY7/Edit.png)<br/>
+### Search Prompts, Tags or Users.
+![Search](https://i.ibb.co/sQT7B7D/Search.png)<br/>
+### User Profile Page
+![Profile](https://i.ibb.co/rmChzRC/Profile.png)
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Get API keys for GoogleAuth and MONGODB.
+2. Clone the repo
+   ```sh
+   git clone https://github.com/DeeprajB/prompty.git
+   cd prompty
+   ```
+3. Make a .env file which has the same keys as below
+   ```sh
+    GOOGLE_ID =
+    GOOGLE_CLIENT_SECRET =
+    MONGODB_URI =
+    NEXTAUTH_URL = http://localhost:3000
+    NEXTAUTH_URL_INTERNAL = http://localhost:3000
+    NEXTAUTH_SECRET =
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Installing and running prompty
+   ```sh
+   npm install
+   npm run dev
+   ```
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Deploy on Vercel
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See `LICENSE` for more information.
