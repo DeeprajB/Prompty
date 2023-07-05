@@ -15,10 +15,20 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
         navigator.clipboard.writeText(prompt.prompt)
         setTimeout(() => setCopied(''), 3000)
     }
-  return (
+    const handleProfileClick = () => {
+        if (session?.user.id === prompt.creator._id) {
+            router.push('/profile')
+        }else{
+            router.push(`/profile/${prompt.creator._id}?name=${prompt.creator.username}`)
+        }
+    }
+   return (
     <div className="prompt_card">
         <div className="flex justify-between items-start gap-5">
-            <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
+            <div
+                className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
+                onClick={handleProfileClick}
+            >
                 <Image
                     src={prompt.creator.image}
                     alt="User Image"
