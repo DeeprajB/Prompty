@@ -40,6 +40,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
                     src={copied === prompt.prompt ?
                     '/assets/icons/tick.svg' : '/assets/icons/copy.svg'
                     }
+                    alt="Copy/Tick Icon"
                     width={12}
                     height={12}
                 />
@@ -47,7 +48,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
         </div>
         <p className="my-4 font-satoshi text-sm text-gray-700">{prompt.prompt}</p>
         <p
-            className="font-inter text-sm blue_gradient cursor-pointer"
+            className={handleTagClick? "font-inter text-sm blue_gradient cursor-pointer":"font-inter text-sm blue_gradient"}
             onClick={() => handleTagClick && handleTagClick(prompt.tag)}
         >
             {prompt.tag}
