@@ -37,7 +37,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
                     className="rounded-full object-contain"
                 />
                 <div className="flex flex-col">
-                    <h3 className="font-satoshi font-semibold text-gray-900">
+                    <h3 className="font-satoshi font-semibold text-gray-300">
                         {prompt.creator.username}
                     </h3>
                     <p className="font-inter text-sm text-gray-500">
@@ -56,9 +56,9 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
                 />
             </div>
         </div>
-        <p className="my-4 font-satoshi text-sm text-gray-700">{prompt.prompt}</p>
+        <p className="my-4 font-satoshi text-sm text-white">{prompt.prompt}</p>
         <p
-            className={handleTagClick? "font-inter text-sm blue_gradient cursor-pointer":"font-inter text-sm blue_gradient"}
+            className={handleTagClick? "font-inter text-sm text-fuchsia-200 cursor-pointer":"font-inter text-sm text-fuchsia-200"}
             onClick={() => handleTagClick && handleTagClick(prompt.tag)}
         >
             {prompt.tag}
@@ -72,7 +72,7 @@ const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
                     Edit
                 </p>
                 <p
-                    className="font-inter text-sm orange_gradient cursor-pointer"
+                    className="font-inter text-sm text-red-500 cursor-pointer"
                     onClick={handleDelete}
                 >
                     Delete
